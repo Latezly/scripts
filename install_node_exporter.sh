@@ -1,6 +1,8 @@
 Scripts_Version=1.0
 Node_Exporter_Version=1.3.1
 
+[ ! -f /etc/node_exporter/node_exporter ] && echo "开始安装" || echo "node_exporter已经安装过了，请勿重复安装";exit 1
+
 cd /tmp
 
 echo "下载Node_Exporter"
